@@ -1,0 +1,22 @@
+{
+    "name": "alkemy-challenge",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "api": "DEBUG=app:* nodemon server/index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/soequelle/alkemy-challenge.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.13"
+    }
+}
