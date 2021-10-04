@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
+const { config } = require('../config/index');
 
 const operationsApi = require('./routes/operations.js');
-const port = 3000;
+const port = config.apiPort;
 
 app.use(express.json());
 
