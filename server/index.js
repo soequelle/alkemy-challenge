@@ -1,14 +1,14 @@
 const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
+const { config } = require('../config/index');
 
-const port = 3000
+const operationsApi = require('./routes/operations.js');
+const port = config.apiPort;
 
 app.use(express.json());
 
-app.get('/api', (req, res) => {
-	res.send({ home: 'It works!' });
-})
+operationsApi(app);
 
 app.listen(port, function() {
     console.log(`Listening http://localhost:${port}`);
