@@ -39,7 +39,7 @@ function operetionsApi(app) {
 
     router.post('/', async function(req, res, next) {
 				const { body: operation } = req;
-
+				
 				try {
 					const createdOperation = await operationsService.createOperation({ operation });
 	

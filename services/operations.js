@@ -1,6 +1,6 @@
 const db = require('../lib/db');
 
-class OperationsService {	
+class OperationsService {
 
 	async getOperations() {
 		const operations = await db.getAllOperations();
@@ -30,6 +30,12 @@ class OperationsService {
 		const deletedOperation = await db.deleteOperation({ operationId });
 		
 		return deletedOperation;
+	}
+
+	async getStatistics() {
+		const statistics = await db.getAllStatistics();
+		
+		return statistics || {};
 	}
 }
 
