@@ -44,7 +44,6 @@ Install the dependencies and devDependencies and start the server.
 For API server
 
 ```sh
-cd dillinger
 npm install
 node run api
 ```
